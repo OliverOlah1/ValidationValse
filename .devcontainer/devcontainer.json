@@ -1,0 +1,19 @@
+{
+	"name": "Maven Java 23 Project",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "23"
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "23"
+		},
+		"ghcr.io/devcontainers/features/maven:1": {}
+	},
+	"forwardPorts": [
+		8000
+	],
+	"postCreateCommand": "java -version"
+}
